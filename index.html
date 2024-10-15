@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mine Website</title>
+   <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header fixed-top">
+
+   <div class="container">
+
+      <div class="row align-items-center justify-content-between">
+
+         <a href="#home" class="logo">Psychology<span>doctor.</span></a><br>
+         <br>
+
+         <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">about me </a>
+            <a href="#services">gallary</a>
+            <a href="#contact">registration</a>
+         </nav>
+
+
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+      </div>
+
+   </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="container">
+
+      <div class="row min-vh-100 align-items-center">
+         <div class="content text-center text-md-left">
+            <h3><i>Home :</i>
+               Psychological therapy makes your life.</h3>
+            <p>We check if the specialist adheres to the ethical norms, and his specific professional approach and experience in different cases., root canal therapy, cavity inspections, and more.</p>
+            <a href="#contact" class="link-btn">registration</a>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <div class="container">
+
+      <div class="row align-items-center">
+
+         <div class="col-md-6 image">
+            <img src="imeg/pic-1.png" class="w-100 mb-5 mb-md-0" alt="">
+         </div>
+
+         <div class="col-md-6 content">
+            <span>____about me</span>
+            <h3>Dr. Albert Brown,</h3>
+            <p> MD is a Family Medicine Specialist in Mancelona, MI and has over 45 years of experience in the medical field. Iam graduated from WAYNE STATE UNIVERSITY in 1978. Iam affiliated with medical facilities Kalkaska Memorial Health Center and Munson Medical Center.</p>
+            <a href="#contact" class="link-btn">registration</a>
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+<!-- gallary section starts  -->
+
+<section class="services" id="services">
+   <h1 class="heading">Gallary</h1>
+   <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="imeg/imeg1.jpg" style="width:100%">
+        <div class="text">imge one</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="imeg/imeg2.jpg" style="width:100%">
+        <div class="text">imge two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="imeg/imeg3.jpg" style="width:100%">
+        <div class="text">imge Three</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+</section>
+
+<!-- gallary section ends -->
+
+<!-- Rgistration section starts  -->
+
+<section class="contact" id="contact">
+
+   <h1 class="heading">registration</h1>
+   <form action="thanks.html"   target="_blank" method="post">
+      <span> First name :</span>
+      <input type="text" name="name" placeholder="Enter your first name" class="box" required pattern="[A-Za-z]{3,15}">
+      <span> Last name :</span>
+      <input type="text" name="name" placeholder="Enter your  last name" class="box" required pattern="[A-Za-z]{3,15}">
+      <span>Username :</span>
+      <input type="text" name="name" placeholder="Enter your username" class="box" required minlength="6" maxlength="20">
+      <span> Password :</span>
+      <input type="password" id="myInput" placeholder="Enter your password" class="box"required pattern="(?=.*\d)(?=.*[!@#$%^&*]).{8,}" >
+      <input type="checkbox" onclick="myFunction()"><u class="show">Show Password</u> <br>
+      <br>
+      <span> Email :</span>
+      <input type="email" name="email" placeholder="Enter your email" class="box" required>
+      <span>Age:</span>
+      <input type="number" name="age" placeholder="Enter your age" class="box" required min="16" max="45">
+      <span>Choice the country :</span>
+            <select name="country" class="box" required>
+                <option>Egypt</option>
+                <option>Germany</option>
+                <option>London</option>
+                <option>United State</option>
+               </select>
+        <span>Choice the gender :</span>
+        <div class="box" id="sh">
+       <input id="fe"type="radio" name="gender" value="female" />
+       <label for="fe">female</label> 
+       <input id="ma"type="radio" name="gender" value="male" />
+       <label for="ma">male</label><br>
+        </div>
+       <span>Choice the interests :</span>
+       <div class="box" id="sectionForm">
+        <input id="foot" type="checkbox" name="opt1" value="football"/>
+        <label for="foot">football</label>
+        <input id="basket"type="checkbox" name="opt2" value="basketball"/>
+        <label for="basket">basketball</label>
+          <br>
+         <input id="game"type="checkbox" name="opt3" value="games"  />
+         <label for="game">games</label>
+         <input id="read" type="checkbox" name="opt3" value="reading"  />
+         <label for="read">reading</label>
+         <br>
+         <input id="swim" type="checkbox" name="opt3" value="swimming" />
+         <label for="swim">swimming</label>
+          <br>
+      </div>
+         <span>Address:</span>
+         <textarea placeholder="write the address in dital" class="box" required></textarea>
+      <input type="submit" value="submit" name="submit" class="link-btn">
+   </form>
+   
+      
+   
+</section>
+
+<!-- Registarition section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container container">
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3>phone number</h3>
+         <p> 01068263341</p>
+
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>My address</h3>
+         <p> eg/alqlubya</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-clock"></i>
+         <h3>opening hours</h3>
+         <p>10:00am to 07:00pm</p>
+      </div>
+
+      
+
+   </div>
+
+
+
+</section>
+
+<script src="index.js"></script>
+
+
+</body>
+</html>
